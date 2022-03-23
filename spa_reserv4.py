@@ -47,7 +47,10 @@ def kontroll(eesnimi1, p_nimi1):
         else:
             print('Täname külastamast!')
     else:
-        print('Reserveering on olemas.')
+        asi = con.execute(('SELECT Inimesed, Kellaaeg FROM spa_reservatsioonid WHERE Eesnimi = ? AND Perekonnanimi = ?'), (eesnimi1.title(), p_nimi1.title()))
+        m = list(asi.fetchall())
+        for i in m:
+            print('Reserveering on ' + str(i[0]) + "-le inimesele kell " + str(i[1]))
         print('Täname külastamast!')
         
 def lisa_reserv(eesnimi, p_nimi):
