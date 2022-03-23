@@ -1,0 +1,4 @@
+Margus;Treumuth;4;18:00
+Tauri;Saar;1;15:30
+Hanna;Mägi;2;20:00
+Merit;Lepik;3;16:30
