@@ -41,7 +41,7 @@ def kontroll(eesnimi1, p_nimi1):
     if not check:
         ask = input('Reserveeringut ei ole andmebaasis. Kas soovite selle lisada? (Jah/Ei) ')
         if ask.lower() == 'jah':
-            lisa_reserv(eesnimi1, p_nimi1)
+            lisa_reserv(eesnimi1.title(), p_nimi1.title())
             print('Uus reservatsioon on lisatud')
             print('Täname külastamast!')
         else:
